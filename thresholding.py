@@ -7,4 +7,7 @@ cv.imshow("gray scale image", gray_img)
 threshold,threshed_img=cv.threshold(gray_img,127,255,cv.THRESH_BINARY) #threshold is exactly the same value we pass to function 
 #maxval is the value assigned to pixels with higher value than threshold 
 cv.imshow("threshed image", threshed_img)
+#inverse thresholding
+threshold,inv_threshed_img=cv.threshold(gray_img,127,255,cv.THRESH_BINARY_INV)
+cv.imshow("inverse thresholding",inv_threshed_img)
 cv.waitKey(0)
